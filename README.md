@@ -1,10 +1,15 @@
 pipeline {
-    agent any 
+    agent any
     stages {
-        stage('scm') {
+        stage('Example') {
             steps {
-                echo 'my main branch'
+                echo 'Hello World'
             }
         }
-     }
-  } 
+    }
+    post { 
+        always { 
+            Email 'ravimore001@gmail.com'
+        }
+    }
+}
