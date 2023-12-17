@@ -9,7 +9,7 @@ pipeline {
     }
     post { 
         always { 
-            echo 'ravimore001@gmail.com'
+            email 'ravimore001@gmail.com'
         }
     }
 }
